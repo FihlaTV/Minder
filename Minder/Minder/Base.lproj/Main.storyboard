@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -102,7 +102,7 @@
         <!--Main Page-->
         <scene sceneID="t9f-3c-d9w">
             <objects>
-                <viewController title="Main Page" id="DRU-r8-tTN" sceneMemberID="viewController">
+                <viewController title="Main Page" id="DRU-r8-tTN" customClass="MainPageViewController" customModule="Minder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0d8-BX-ND5"/>
                         <viewControllerLayoutGuide type="bottom" id="gi7-hZ-Sme"/>
@@ -154,6 +154,9 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="chooseMentor:" destination="DRU-r8-tTN" eventType="valueChanged" id="eEu-1I-Eot"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ww-wH-wSP">
                                 <rect key="frame" x="320" y="20" width="48" height="44"/>
@@ -163,6 +166,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mainPageView" destination="W5m-Db-OQj" id="V0h-ZR-LlQ"/>
+                        <outlet property="mentorpicker" destination="F2T-fy-s6Q" id="vBf-el-7u2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RI9-LZ-gCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,8 +178,8 @@
         <!--Root Page View Controller-->
         <scene sceneID="vO1-bw-ZBg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ml-9o-Xec" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="rhL-CM-s9l" customClass="RootPageViewController" customModule="Minder" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ml-9o-Xec" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1614" y="673"/>
         </scene>
@@ -206,7 +213,7 @@
         <!--Mentors-->
         <scene sceneID="9BU-ed-uf8">
             <objects>
-                <viewController title="Mentors" id="6e7-Ii-9WB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mentorVC" title="Mentors" id="6e7-Ii-9WB" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bFx-bz-e9N"/>
                         <viewControllerLayoutGuide type="bottom" id="rUf-aW-5rr"/>
@@ -214,6 +221,15 @@
                     <view key="view" contentMode="scaleToFill" id="g3B-Ln-M3P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mentorVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBb-00-aMS">
+                                <rect key="frame" x="157" y="166" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -224,7 +240,7 @@
         <!--Mentees-->
         <scene sceneID="gBa-ah-Yf4">
             <objects>
-                <viewController title="Mentees" id="BYa-Ne-Ooc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menteeVC" title="Mentees" id="BYa-Ne-Ooc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QZF-No-2M2"/>
                         <viewControllerLayoutGuide type="bottom" id="3qy-0A-hXY"/>
@@ -232,6 +248,15 @@
                     <view key="view" contentMode="scaleToFill" id="1Pe-s5-aST">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="menteeVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsZ-2m-9a0">
+                                <rect key="frame" x="179" y="156" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -289,7 +314,7 @@
         <scene sceneID="Slv-yg-Iyz">
             <objects>
                 <navigationController modalTransitionStyle="flipHorizontal" id="IiB-ik-HBO" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="jCR-Ya-RTa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="jCR-Ya-RTa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
