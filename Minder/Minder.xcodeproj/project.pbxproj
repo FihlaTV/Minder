@@ -12,7 +12,6 @@
 		B87EE3521F1A94C600B067EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87EE3501F1A94C600B067EE /* Main.storyboard */; };
 		B87EE3541F1A94C600B067EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87EE3531F1A94C600B067EE /* Assets.xcassets */; };
 		B87EE3571F1A94C600B067EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87EE3551F1A94C600B067EE /* LaunchScreen.storyboard */; };
-		B87EE35F1F1A99DA00B067EE /* Black-mentor-mentee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B87EE35E1F1A99DA00B067EE /* Black-mentor-mentee.jpg */; };
 		B87EE3611F1AC6E000B067EE /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87EE3601F1AC6E000B067EE /* RootPageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +23,6 @@
 		B87EE3531F1A94C600B067EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B87EE3561F1A94C600B067EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B87EE3581F1A94C600B067EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B87EE35E1F1A99DA00B067EE /* Black-mentor-mentee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Black-mentor-mentee.jpg"; path = "../../../../Downloads/Black-mentor-mentee.jpg"; sourceTree = "<group>"; };
 		B87EE3601F1AC6E000B067EE /* RootPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +60,6 @@
 				B87EE34E1F1A94C600B067EE /* ViewController.swift */,
 				B87EE3601F1AC6E000B067EE /* RootPageViewController.swift */,
 				B87EE3501F1A94C600B067EE /* Main.storyboard */,
-				B87EE35E1F1A99DA00B067EE /* Black-mentor-mentee.jpg */,
 				B87EE3531F1A94C600B067EE /* Assets.xcassets */,
 				B87EE3551F1A94C600B067EE /* LaunchScreen.storyboard */,
 				B87EE3581F1A94C600B067EE /* Info.plist */,
@@ -129,7 +126,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B87EE35F1F1A99DA00B067EE /* Black-mentor-mentee.jpg in Resources */,
 				B87EE3571F1A94C600B067EE /* LaunchScreen.storyboard in Resources */,
 				B87EE3541F1A94C600B067EE /* Assets.xcassets in Resources */,
 				B87EE3521F1A94C600B067EE /* Main.storyboard in Resources */,
