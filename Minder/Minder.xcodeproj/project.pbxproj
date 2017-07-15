@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43ACEE221F1AD9E90094613E /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ACEE211F1AD9E90094613E /* LandingViewController.swift */; };
 		B87EE34D1F1A94C600B067EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87EE34C1F1A94C600B067EE /* AppDelegate.swift */; };
 		B87EE34F1F1A94C600B067EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87EE34E1F1A94C600B067EE /* ViewController.swift */; };
 		B87EE3521F1A94C600B067EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87EE3501F1A94C600B067EE /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43ACEE211F1AD9E90094613E /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		B87EE3491F1A94C600B067EE /* Minder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87EE34C1F1A94C600B067EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B87EE34E1F1A94C600B067EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43ACEE201F1AD9BA0094613E /* Landing & Sign Up View Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				43ACEE211F1AD9E90094613E /* LandingViewController.swift */,
+			);
+			name = "Landing & Sign Up View Controlers";
+			sourceTree = "<group>";
+		};
 		B87EE3401F1A94C600B067EE = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		B87EE34B1F1A94C600B067EE /* Minder */ = {
 			isa = PBXGroup;
 			children = (
+				43ACEE201F1AD9BA0094613E /* Landing & Sign Up View Controlers */,
 				B87EE34C1F1A94C600B067EE /* AppDelegate.swift */,
 				B87EE34E1F1A94C600B067EE /* ViewController.swift */,
 				B87EE3601F1AC6E000B067EE /* RootPageViewController.swift */,
@@ -145,6 +156,7 @@
 			files = (
 				B87EE3611F1AC6E000B067EE /* RootPageViewController.swift in Sources */,
 				B87EE34F1F1A94C600B067EE /* ViewController.swift in Sources */,
+				43ACEE221F1AD9E90094613E /* LandingViewController.swift in Sources */,
 				B87EE34D1F1A94C600B067EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
