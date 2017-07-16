@@ -31,7 +31,11 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDataSour
 
         self.dataSource = self
         
-        // Do any additional setup after loading the view.
+        for view in self.view.subviews{
+            if let subView = view as? UIScrollView {
+                subView.isScrollEnabled = false
+            }
+        }
         
         if let firstViewController = viewControllerList.first { self.setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
@@ -43,7 +47,8 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDataSour
         // Dispose of any resources that can be recreated.
         
        // func pageViewController(<#T##pageViewController: UIPageViewController##UIPageViewController#>, viewControllerBefore: <#T##UIViewController#>)
-        
+    
+    
         func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
             
             guard let vcIndex = viewControllerList.index(of: viewController) else {return nil}
@@ -70,17 +75,5 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDataSour
             
             return viewControllerList[nextIndex]
         }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     }
 

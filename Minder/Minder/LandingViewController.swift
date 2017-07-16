@@ -9,9 +9,12 @@
 import UIKit
 
 class LandingViewController: UIViewController {
-    var txtEmail : String? = nil
-    var txtPassword : String? = nil
-        
+    
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
+    
+    let queryService = QueryService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,10 +25,20 @@ class LandingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func signIn(_ sender: Any) {
-        if let username = txtEmail, let password = txtPassword,  validateEmail(email: username), validatePassword(password: password) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Login" {
+            signIn()
+        }
+    }
+    
+    func signIn() {
+        
+        if let email = txtEmail.text, let password = txtPassword.text,  validateEmail(email: email), validatePassword(password: password) {
             
-            // Add code to check if email and username is in database
+            let params : NSDictionary = ["email" : email, "password" : password]
+            queryService.getSearchResults(params) { (users, error) in
+                print(users)
+            }
             
         } else {
             print("Please enter a valid username and password Combination")

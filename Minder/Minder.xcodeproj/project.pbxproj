@@ -14,6 +14,8 @@
 		1A7537EC7B627920CC6BC3C9 /* Pods_Minder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99063C4E764041417D953EF3 /* Pods_Minder.framework */; };
 		33C233F61F1ABF8900227608 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C233F51F1ABF8900227608 /* MainPageViewController.swift */; };
 		43ACEE221F1AD9E90094613E /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ACEE211F1AD9E90094613E /* LandingViewController.swift */; };
+		43ACEE2C1F1AE3E20094613E /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ACEE2B1F1AE3E20094613E /* QueryService.swift */; };
+		43ACEE2F1F1B00D70094613E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ACEE2E1F1B00D70094613E /* User.swift */; };
 		B87EE34D1F1A94C600B067EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87EE34C1F1A94C600B067EE /* AppDelegate.swift */; };
 		B87EE34F1F1A94C600B067EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87EE34E1F1A94C600B067EE /* ViewController.swift */; };
 		B87EE3521F1A94C600B067EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87EE3501F1A94C600B067EE /* Main.storyboard */; };
@@ -30,7 +32,12 @@
 		04DD0F7F1F1B1418002A74B5 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		33C233F51F1ABF8900227608 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		43ACEE211F1AD9E90094613E /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		99063C4E764041417D953EF3 /* Pods_Minder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Minder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+		43ACEE2B1F1AE3E20094613E /* QueryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
+		43ACEE2E1F1B00D70094613E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+>>>>>>> c9398e5674131f45761cefcae798630780d83515
 		B87EE3491F1A94C600B067EE /* Minder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87EE34C1F1A94C600B067EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B87EE34E1F1A94C600B067EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,12 +78,29 @@
 			name = "Landing & Sign Up View Controlers";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		626DA9D3DF7EC20228146ACF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				99063C4E764041417D953EF3 /* Pods_Minder.framework */,
 			);
 			name = Frameworks;
+=======
+		43ACEE2A1F1AE3670094613E /* API Connections */ = {
+			isa = PBXGroup;
+			children = (
+				43ACEE2B1F1AE3E20094613E /* QueryService.swift */,
+			);
+			name = "API Connections";
+			sourceTree = "<group>";
+		};
+		43ACEE2D1F1B00C70094613E /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				43ACEE2E1F1B00D70094613E /* User.swift */,
+			);
+			name = Users;
+>>>>>>> c9398e5674131f45761cefcae798630780d83515
 			sourceTree = "<group>";
 		};
 		B87EE3401F1A94C600B067EE = {
@@ -100,6 +124,7 @@
 		B87EE34B1F1A94C600B067EE /* Minder */ = {
 			isa = PBXGroup;
 			children = (
+				43ACEE2D1F1B00C70094613E /* Users */,
 				43ACEE201F1AD9BA0094613E /* Landing & Sign Up View Controlers */,
 				B87EE34C1F1A94C600B067EE /* AppDelegate.swift */,
 				04DD0F771F1B0670002A74B5 /* DraggableViewBackground.swift */,
@@ -108,6 +133,7 @@
 				04DD0F7F1F1B1418002A74B5 /* Reachability.swift */,
 				B87EE34E1F1A94C600B067EE /* ViewController.swift */,
 				B87EE3601F1AC6E000B067EE /* RootPageViewController.swift */,
+				43ACEE2A1F1AE3670094613E /* API Connections */,
 				33C233F51F1ABF8900227608 /* MainPageViewController.swift */,
 				B87EE3501F1A94C600B067EE /* Main.storyboard */,
 				B87EE3531F1A94C600B067EE /* Assets.xcassets */,
@@ -247,6 +273,8 @@
 				B87EE3611F1AC6E000B067EE /* RootPageViewController.swift in Sources */,
 				04DD0F801F1B1418002A74B5 /* Reachability.swift in Sources */,
 				B87EE34F1F1A94C600B067EE /* ViewController.swift in Sources */,
+				43ACEE2F1F1B00D70094613E /* User.swift in Sources */,
+				43ACEE2C1F1AE3E20094613E /* QueryService.swift in Sources */,
 				43ACEE221F1AD9E90094613E /* LandingViewController.swift in Sources */,
 				B87EE34D1F1A94C600B067EE /* AppDelegate.swift in Sources */,
 			);
