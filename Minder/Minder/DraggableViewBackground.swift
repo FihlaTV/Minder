@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import ReachabilitySwift
+let ReachabilitySwift = Reachability()
 
 
 class DraggableViewBackground: UIView, DraggableViewDelegate {
@@ -18,7 +19,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     var myWebView: UIWebView!
     
     let MAX_BUFFER_SIZE = 2
-    let CARD_HEIGHT: CGFloat = 386
+    let CARD_HEIGHT: CGFloat = 480
     let CARD_WIDTH: CGFloat = 350
     
     
@@ -46,6 +47,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
             
             exampleCardLabels.append("No Internet Connection")
         }
+        
         actualCardLabels = []
         allCards = []
         loadedCards = []
@@ -54,7 +56,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     }
     
     func setupView() -> Void {
-        self.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+        self.backgroundColor = UIColor(red: 0, green: 0, blue: 0.2, alpha: 0.2)
         
         xButton = UIButton(frame: CGRect(x: (self.frame.size.width - CARD_WIDTH)/2 + 45, y: self.frame.size.height/2 + CARD_HEIGHT/2 + 35, width: 70, height: 70))
         xButton.setImage(UIImage(named: "xButton"), for: UIControlState())
@@ -74,7 +76,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     }
     
     func createDraggableViewWithDataAtIndex(_ index: NSInteger) -> DraggableView {
-        let draggableView = DraggableView(frame: CGRect(x: (self.frame.size.width - CARD_WIDTH)/2, y: (self.frame.size.height - CARD_HEIGHT)/2, width: CARD_WIDTH, height: CARD_HEIGHT))
+        let draggableView = DraggableView(frame: CGRect(x: (self.frame.size.width - CARD_WIDTH)/2, y: ((self.frame.size.height - CARD_HEIGHT)/2)-83, width: CARD_WIDTH, height: CARD_HEIGHT))
         draggableView.information.text = exampleCardLabels[index]
         
         draggableView.information.adjustsFontSizeToFitWidth = true

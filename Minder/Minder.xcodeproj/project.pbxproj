@@ -32,10 +32,9 @@
 		04DD0F7F1F1B1418002A74B5 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		33C233F51F1ABF8900227608 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		43ACEE211F1AD9E90094613E /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
-		99063C4E764041417D953EF3 /* Pods_Minder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Minder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		43ACEE211F1AD9E90094613E /* LandingViewCo/Users/kofisekyi-appiah/workspace/Minder/Minder/Minder.xcodeproj/project.pbxprojntroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		43ACEE2B1F1AE3E20094613E /* QueryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
 		43ACEE2E1F1B00D70094613E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		99063C4E764041417D953EF3 /* Pods_Minder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Minder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87EE3491F1A94C600B067EE /* Minder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87EE34C1F1A94C600B067EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B87EE34E1F1A94C600B067EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,13 +75,6 @@
 			name = "Landing & Sign Up View Controlers";
 			sourceTree = "<group>";
 		};
-		626DA9D3DF7EC20228146ACF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				99063C4E764041417D953EF3 /* Pods_Minder.framework */,
-			);
-			name = Frameworks;
-		};
 		43ACEE2A1F1AE3670094613E /* API Connections */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +89,15 @@
 				43ACEE2E1F1B00D70094613E /* User.swift */,
 			);
 			name = Users;
-
 			sourceTree = "<group>";
+		};
+		626DA9D3DF7EC20228146ACF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99063C4E764041417D953EF3 /* Pods_Minder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<unknown>";
 		};
 		B87EE3401F1A94C600B067EE = {
 			isa = PBXGroup;
