@@ -47,9 +47,9 @@ class DraggableView: UIView, WKNavigationDelegate {
         
         self.setupView()
         
-        information = UILabel(frame: CGRect(x: 0, y: 50, width: self.frame.size.width, height: 100))
+        information = UILabel(frame: CGRect(x: 20, y: 370, width: self.frame.size.width, height: 100))
         information.text = "no info given"
-        information.textAlignment = NSTextAlignment.center
+        information.textAlignment = NSTextAlignment.left
         information.textColor = UIColor.black
         
         self.backgroundColor = UIColor.white

@@ -44,8 +44,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         exampleCardLabels = []
         
         for i in 0 ..< 10000 {
-            
-            exampleCardLabels.append("No Internet Connection")
+            exampleCardLabels.append("Name, Age\nOccupation\nSkills")
         }
         
         actualCardLabels = []
