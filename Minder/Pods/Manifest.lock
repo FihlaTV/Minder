@@ -1,0 +1,15 @@
+PODS:
+  - Kanna (2.2.1)
+  - ReachabilitySwift (3)
+
+DEPENDENCIES:
+  - Kanna
+  - ReachabilitySwift (~> 3)
+
+SPEC CHECKSUMS:
+  Kanna: 182789ab065e8f9a6ccc2a74ce6283d3401c0c4a
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+
+PODFILE CHECKSUM: 33076ed8dcf9b855a016600bbe2549e4cc2ba343
+
+COCOAPODS: 1.2.1
