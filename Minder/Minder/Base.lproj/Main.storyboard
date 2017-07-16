@@ -61,7 +61,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Login">
-                                                            <color key="titleColor" red="0.82250844594594597" green="0.29225063604865875" blue="0.2567500019818707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" red="0.29012386321921124" green="0.47102051973342896" blue="0.16024293715898141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <segue destination="DRU-r8-tTN" kind="presentation" id="WTx-qj-eO1"/>
@@ -102,7 +102,7 @@
         <!--Main Page-->
         <scene sceneID="t9f-3c-d9w">
             <objects>
-                <viewController title="Main Page" id="DRU-r8-tTN" sceneMemberID="viewController">
+                <viewController title="Main Page" id="DRU-r8-tTN" customClass="MainPageViewController" customModule="Minder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0d8-BX-ND5"/>
                         <viewControllerLayoutGuide type="bottom" id="gi7-hZ-Sme"/>
@@ -112,64 +112,77 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W5m-Db-OQj">
-                                <rect key="frame" x="0.0" y="98" width="375" height="471"/>
+                                <rect key="frame" x="0.0" y="66" width="375" height="503"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="rhL-CM-s9l" kind="embed" id="bSx-g0-HdT"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfM-Wm-skI">
-                                <rect key="frame" x="289" y="609" width="70" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVH-wN-fjt">
+                                <rect key="frame" x="45" y="582" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Interested"/>
+                                <state key="normal" title="Not interested" image="x-mark-3-xxl"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVH-wN-fjt">
-                                <rect key="frame" x="3" y="608" width="98" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsL-qK-tAS">
+                                <rect key="frame" x="148" y="578" width="78" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Not interested"/>
+                                <state key="normal" title="Very interested" image="star-6-xxl"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsL-qK-tAS">
-                                <rect key="frame" x="135" y="609" width="104" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-YZ-109">
+                                <rect key="frame" x="9" y="22" width="40" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Very interested"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-YZ-109">
-                                <rect key="frame" x="16" y="28" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Settings"/>
+                                <state key="normal" title="Settings" image="2000px-WMF-Agora-Settings_BCBCBC.svg"/>
                                 <connections>
-                                    <segue destination="dXA-CP-e6a" kind="show" id="vb3-F6-e8B"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gl4-2Q-gnO">
-                                <rect key="frame" x="289" y="28" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Messages"/>
-                                <connections>
-                                    <segue destination="gwD-gn-iuV" kind="show" id="KUs-8P-eYS"/>
+                                    <segue destination="ffj-x8-YM6" kind="presentation" id="ByG-jM-1SE"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F2T-fy-s6Q">
-                                <rect key="frame" x="127" y="30" width="121" height="29"/>
+                                <rect key="frame" x="127" y="28" width="121" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Mentor"/>
                                     <segment title="Mentee"/>
                                 </segments>
+                                <color key="tintColor" red="0.74096542596817017" green="0.7450142502784729" blue="0.75321608781814575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="chooseMentor:" destination="DRU-r8-tTN" eventType="valueChanged" id="eEu-1I-Eot"/>
+                                </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ww-wH-wSP">
+                                <rect key="frame" x="331" y="22" width="39" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="icon-mail-grey-150x150"/>
+                                <connections>
+                                    <segue destination="nbt-ia-4BK" kind="presentation" id="sdD-XZ-KeL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfM-Wm-skI">
+                                <rect key="frame" x="259" y="582" width="65" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Interested" image="heart-favourite-icon"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mainPageView" destination="W5m-Db-OQj" id="V0h-ZR-LlQ"/>
+                        <outlet property="mentorpicker" destination="F2T-fy-s6Q" id="vBf-el-7u2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RI9-LZ-gCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="856.79999999999995" y="499.70014992503752"/>
+            <point key="canvasLocation" x="900" y="512.29385307346331"/>
         </scene>
         <!--Root Page View Controller-->
         <scene sceneID="vO1-bw-ZBg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ml-9o-Xec" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="rhL-CM-s9l" customClass="RootPageViewController" customModule="Minder" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ml-9o-Xec" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1614" y="673"/>
         </scene>
@@ -195,15 +208,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Messages" id="JgR-NI-Be6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6u2-K9-PTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1614" y="1426"/>
+            <point key="canvasLocation" x="2334" y="1381"/>
         </scene>
         <!--Mentors-->
         <scene sceneID="9BU-ed-uf8">
             <objects>
-                <viewController title="Mentors" id="6e7-Ii-9WB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mentorVC" title="Mentors" id="6e7-Ii-9WB" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bFx-bz-e9N"/>
                         <viewControllerLayoutGuide type="bottom" id="rUf-aW-5rr"/>
@@ -211,6 +225,15 @@
                     <view key="view" contentMode="scaleToFill" id="g3B-Ln-M3P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mentorVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBb-00-aMS">
+                                <rect key="frame" x="157" y="166" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -221,7 +244,7 @@
         <!--Mentees-->
         <scene sceneID="gBa-ah-Yf4">
             <objects>
-                <viewController title="Mentees" id="BYa-Ne-Ooc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menteeVC" title="Mentees" id="BYa-Ne-Ooc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QZF-No-2M2"/>
                         <viewControllerLayoutGuide type="bottom" id="3qy-0A-hXY"/>
@@ -229,6 +252,15 @@
                     <view key="view" contentMode="scaleToFill" id="1Pe-s5-aST">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="menteeVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsZ-2m-9a0">
+                                <rect key="frame" x="179" y="156" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -262,7 +294,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Yb-4g-UzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2343" y="1214"/>
+            <point key="canvasLocation" x="3145" y="1381"/>
         </scene>
         <!--Settings-->
         <scene sceneID="9AQ-mL-w7i">
@@ -277,16 +309,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Settings" id="rzY-lG-D2s"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nec-Z3-7Wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="1247"/>
+            <point key="canvasLocation" x="790" y="2121"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Slv-yg-Iyz">
             <objects>
                 <navigationController modalTransitionStyle="flipHorizontal" id="IiB-ik-HBO" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="jCR-Ya-RTa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="jCR-Ya-RTa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -301,7 +334,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHs-3Q-lEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1004" y="-206"/>
+            <point key="canvasLocation" x="1012" y="-177"/>
         </scene>
         <!--Sign Up Page-->
         <scene sceneID="ERK-my-hz6">
@@ -767,11 +800,58 @@
             </objects>
             <point key="canvasLocation" x="3847" y="-206"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7RQ-ML-qNS">
+            <objects>
+                <navigationController definesPresentationContext="YES" modalTransitionStyle="flipHorizontal" id="nbt-ia-4BK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="39l-EW-LvP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.14915946129999999" green="0.14999735359999999" blue="0.078529380260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gwD-gn-iuV" kind="relationship" relationship="rootViewController" id="ghg-Ik-3ST"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Nb-oD-4De" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="1380"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QXI-Uf-G0t">
+            <objects>
+                <navigationController modalTransitionStyle="flipHorizontal" id="ffj-x8-YM6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Whq-aL-lAL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.14915946129999999" green="0.14999735359999999" blue="0.078529380260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dXA-CP-e6a" kind="relationship" relationship="rootViewController" id="253-fZ-2zd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UWt-R9-7dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="1379"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="2000px-WMF-Agora-Settings_BCBCBC.svg" width="2000" height="2000"/>
         <image name="Black-mentor-mentee" width="849" height="565"/>
+        <image name="heart-favourite-icon" width="256" height="256"/>
+        <image name="icon-mail-grey-150x150" width="417" height="414"/>
+        <image name="star-6-xxl" width="256" height="256"/>
+        <image name="x-mark-3-xxl" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WTx-qj-eO1"/>
+        <segue reference="5dg-3d-GO6"/>
     </inferredMetricsTieBreakers>
 </document>

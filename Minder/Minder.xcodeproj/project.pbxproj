@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33C233F61F1ABF8900227608 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C233F51F1ABF8900227608 /* MainPageViewController.swift */; };
 		43ACEE221F1AD9E90094613E /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ACEE211F1AD9E90094613E /* LandingViewController.swift */; };
 		43ACEE2C1F1AE3E20094613E /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ACEE2B1F1AE3E20094613E /* QueryService.swift */; };
 		43ACEE2F1F1B00D70094613E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ACEE2E1F1B00D70094613E /* User.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33C233F51F1ABF8900227608 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		43ACEE211F1AD9E90094613E /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		43ACEE2B1F1AE3E20094613E /* QueryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
 		43ACEE2E1F1B00D70094613E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -91,7 +93,11 @@
 				B87EE34C1F1A94C600B067EE /* AppDelegate.swift */,
 				B87EE34E1F1A94C600B067EE /* ViewController.swift */,
 				B87EE3601F1AC6E000B067EE /* RootPageViewController.swift */,
+<<<<<<< HEAD
 				43ACEE2A1F1AE3670094613E /* API Connections */,
+=======
+				33C233F51F1ABF8900227608 /* MainPageViewController.swift */,
+>>>>>>> d080420e8e9151342d3eb4277b19abb0aa97e260
 				B87EE3501F1A94C600B067EE /* Main.storyboard */,
 				B87EE3531F1A94C600B067EE /* Assets.xcassets */,
 				B87EE3551F1A94C600B067EE /* LaunchScreen.storyboard */,
@@ -172,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C233F61F1ABF8900227608 /* MainPageViewController.swift in Sources */,
 				B87EE3611F1AC6E000B067EE /* RootPageViewController.swift in Sources */,
 				B87EE34F1F1A94C600B067EE /* ViewController.swift in Sources */,
 				43ACEE2F1F1B00D70094613E /* User.swift in Sources */,
