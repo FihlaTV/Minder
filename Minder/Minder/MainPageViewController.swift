@@ -10,12 +10,19 @@ import Foundation
 import UIKit
 
 class MainPageViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     @IBAction func chooseMentor(_ sender: Any) {
       
         if let rootPageViewController = self.childViewControllers.first as? RootPageViewController{
         
             rootPageViewController.setViewControllers([rootPageViewController.viewControllerList[mentorpicker.selectedSegmentIndex]], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
         }
+        
     }
 
     @IBOutlet weak var mentorpicker: UISegmentedControl!

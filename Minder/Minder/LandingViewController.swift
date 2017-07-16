@@ -9,9 +9,10 @@
 import UIKit
 
 class LandingViewController: UIViewController {
-    var txtEmail : String? = nil
-    var txtPassword : String? = nil
-        
+    
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,8 +23,9 @@ class LandingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func signIn(_ sender: Any) {
-        if let username = txtEmail, let password = txtPassword,  validateEmail(email: username), validatePassword(password: password) {
+    @IBAction func signIn(_ sender: Any) {
+        
+        if let username = txtEmail.text, let password = txtPassword.text,  validateEmail(email: username), validatePassword(password: password) {
             
             // Add code to check if email and username is in database
             

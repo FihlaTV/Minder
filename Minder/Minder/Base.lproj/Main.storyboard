@@ -12,7 +12,7 @@
         <!--Landing Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Landing Page" id="BYZ-38-t0r" customClass="ViewController" customModule="Minder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Landing Page" id="BYZ-38-t0r" customClass="LandingViewController" customModule="Minder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -64,7 +64,8 @@
                                                             <color key="titleColor" red="0.29012386321921124" green="0.47102051973342896" blue="0.16024293715898141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="DRU-r8-tTN" kind="presentation" id="WTx-qj-eO1"/>
+                                                            <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XWb-aS-NEs"/>
+                                                            <segue destination="nbt-ia-4BK" kind="presentation" id="dkT-WI-caq"/>
                                                         </connections>
                                                     </button>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ufs-0d-TqV">
@@ -94,10 +95,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="Mky-Cp-pJp" id="Lta-AH-efG"/>
+                        <outlet property="txtPassword" destination="ufs-0d-TqV" id="0mp-PU-uGY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="137" y="-65"/>
         </scene>
         <!--Main Page-->
         <scene sceneID="t9f-3c-d9w">
@@ -133,7 +138,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Settings" image="2000px-WMF-Agora-Settings_BCBCBC.svg"/>
                                 <connections>
-                                    <segue destination="ffj-x8-YM6" kind="presentation" id="ByG-jM-1SE"/>
+                                    <segue destination="dXA-CP-e6a" kind="show" id="pje-hG-VrO"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F2T-fy-s6Q">
@@ -156,9 +161,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ww-wH-wSP">
                                 <rect key="frame" x="331" y="22" width="39" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="icon-mail-grey-150x150"/>
+                                <state key="normal" title="Messages" image="icon-mail-grey-150x150"/>
                                 <connections>
-                                    <segue destination="nbt-ia-4BK" kind="presentation" id="sdD-XZ-KeL"/>
+                                    <segue destination="gwD-gn-iuV" kind="show" id="ZTX-8f-muP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfM-Wm-skI">
@@ -169,6 +174,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ZJA-12-1me"/>
                     <connections>
                         <outlet property="mainPageView" destination="W5m-Db-OQj" id="V0h-ZR-LlQ"/>
                         <outlet property="mentorpicker" destination="F2T-fy-s6Q" id="vBf-el-7u2"/>
@@ -176,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RI9-LZ-gCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="512.29385307346331"/>
+            <point key="canvasLocation" x="942" y="624"/>
         </scene>
         <!--Root Page View Controller-->
         <scene sceneID="vO1-bw-ZBg">
@@ -184,7 +190,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="rhL-CM-s9l" customClass="RootPageViewController" customModule="Minder" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ml-9o-Xec" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1614" y="673"/>
+            <point key="canvasLocation" x="1721" y="624"/>
         </scene>
         <!--Messages-->
         <scene sceneID="zHZ-ca-8Ht">
@@ -212,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6u2-K9-PTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2334" y="1381"/>
+            <point key="canvasLocation" x="1479" y="1381"/>
         </scene>
         <!--Mentors-->
         <scene sceneID="9BU-ed-uf8">
@@ -299,7 +305,7 @@
         <!--Settings-->
         <scene sceneID="9AQ-mL-w7i">
             <objects>
-                <viewController title="Settings" id="dXA-CP-e6a" sceneMemberID="viewController">
+                <viewController title="Settings" id="dXA-CP-e6a" customClass="SettingsPageViewController" customModule="Minder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Fg-Rw-o0o"/>
                         <viewControllerLayoutGuide type="bottom" id="OKK-tF-mP6"/>
@@ -313,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nec-Z3-7Wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="790" y="2121"/>
+            <point key="canvasLocation" x="631" y="1380"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Slv-yg-Iyz">
@@ -779,7 +785,7 @@
                                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>
                                                             <connections>
-                                                                <segue destination="DRU-r8-tTN" kind="presentation" id="5dg-3d-GO6"/>
+                                                                <segue destination="nbt-ia-4BK" kind="presentation" id="alz-PV-0Qz"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -803,6 +809,7 @@
         <!--Navigation Controller-->
         <scene sceneID="7RQ-ML-qNS">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Nb-oD-4De" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" modalTransitionStyle="flipHorizontal" id="nbt-ia-4BK" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="39l-EW-LvP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -814,33 +821,11 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="gwD-gn-iuV" kind="relationship" relationship="rootViewController" id="ghg-Ik-3ST"/>
+                        <segue destination="DRU-r8-tTN" kind="relationship" relationship="rootViewController" id="O61-3m-bhE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Nb-oD-4De" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1494" y="1380"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="QXI-Uf-G0t">
-            <objects>
-                <navigationController modalTransitionStyle="flipHorizontal" id="ffj-x8-YM6" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Whq-aL-lAL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.14915946129999999" green="0.14999735359999999" blue="0.078529380260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="dXA-CP-e6a" kind="relationship" relationship="rootViewController" id="253-fZ-2zd"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UWt-R9-7dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="790" y="1379"/>
+            <point key="canvasLocation" x="193" y="698"/>
         </scene>
     </scenes>
     <resources>
@@ -852,6 +837,6 @@
         <image name="x-mark-3-xxl" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5dg-3d-GO6"/>
+        <segue reference="dkT-WI-caq"/>
     </inferredMetricsTieBreakers>
 </document>
