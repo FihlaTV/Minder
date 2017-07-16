@@ -1,0 +1,6 @@
+framework module Pods_Minder {
+  umbrella header "Pods-Minder-umbrella.h"
+
+  export *
+  module * { export * }
+}

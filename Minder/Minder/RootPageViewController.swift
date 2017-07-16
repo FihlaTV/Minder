@@ -15,7 +15,12 @@ class RootPageViewController: UIPageViewController, UIPageViewControllerDataSour
         let sb = UIStoryboard(name: "Main", bundle: nil)
         
         let vc1 = sb.instantiateViewController(withIdentifier: "mentorVC")
+        let draggableBackground1: DraggableViewBackground = DraggableViewBackground(frame: self.view.frame)
+        vc1.view.addSubview(draggableBackground1)
         let vc2 = sb.instantiateViewController(withIdentifier: "menteeVC")
+        let draggableBackground2: DraggableViewBackground = DraggableViewBackground(frame: self.view.frame)
+        vc2.view.addSubview(draggableBackground2)
+        
         
         
         return [vc1, vc2]
