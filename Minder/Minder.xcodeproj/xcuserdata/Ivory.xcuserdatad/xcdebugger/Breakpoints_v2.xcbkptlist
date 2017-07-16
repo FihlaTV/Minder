@@ -58,7 +58,7 @@
                   moduleName = "Minder"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Ivory/Desktop/Minder/Minder/Minder/QueryService.swift"
-                  timestampString = "521869728.634237"
+                  timestampString = "521878053.65793"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "63"
@@ -73,12 +73,60 @@
                   moduleName = "Minder"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Ivory/Desktop/Minder/Minder/Minder/QueryService.swift"
-                  timestampString = "521869728.638268"
+                  timestampString = "521878053.661631"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "63"
                   endingLineNumber = "63"
                   offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Minder/LandingViewController.swift"
+            timestampString = "521874918.994037"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "signIn()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Minder.LandingViewController.signIn () -&gt; ()"
+                  moduleName = "Minder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ivory/Desktop/Minder/Minder/Minder/LandingViewController.swift"
+                  timestampString = "521878053.687071"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1478">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Minder.LandingViewController.(signIn () -&gt; ()).(closure #1)"
+                  moduleName = "Minder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ivory/Desktop/Minder/Minder/Minder/LandingViewController.swift"
+                  timestampString = "521878053.691406"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "32">
                </Location>
             </Locations>
          </BreakpointContent>
