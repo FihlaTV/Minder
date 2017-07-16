@@ -155,13 +155,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gl4-2Q-gnO">
-                                <rect key="frame" x="310" y="5" width="55" height="58"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ww-wH-wSP">
+                                <rect key="frame" x="320" y="20" width="48" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Messages" image="message_icon"/>
-                                <connections>
-                                    <segue destination="gwD-gn-iuV" kind="show" id="KUs-8P-eYS"/>
-                                </connections>
+                                <state key="normal" title="Button" image="icon-mail-grey-150x150"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -776,7 +773,7 @@
     </scenes>
     <resources>
         <image name="Black-mentor-mentee" width="849" height="565"/>
-        <image name="message_icon" width="1200" height="1200"/>
+        <image name="icon-mail-grey-150x150" width="417" height="414"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5dg-3d-GO6"/>
