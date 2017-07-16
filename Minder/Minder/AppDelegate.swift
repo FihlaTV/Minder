@@ -12,9 +12,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+//        KeychainWrapper.standard.set("ahmed@example.com", forKey: "email")
+//        KeychainWrapper.standard.set("123KLjsk", forKey: "password")
         // Override point for customization after application launch.
         return true
     }

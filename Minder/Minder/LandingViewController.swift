@@ -13,6 +13,8 @@ class LandingViewController: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     
+    @IBOutlet weak var label: UILabel!
+    
     let queryService = QueryService()
     
     override func viewDidLoad() {
@@ -25,25 +27,31 @@ class LandingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Login" {
-            signIn()
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "Login" {
+//            signIn()
+//        }
+//    }
     
-    func signIn() {
-        
+    @IBAction func signIn(_ sender: Any) {
         if let email = txtEmail.text, let password = txtPassword.text,  validateEmail(email: email), validatePassword(password: password) {
             
-            let params : NSDictionary = ["email" : email, "password" : password]
-            queryService.getSearchResults(params) { (users, error) in
-                print(users)
+            if email == KeychainWrapper.standard.string(forKey: "email") && password ==  KeychainWrapper.standard.string(forKey: "password") {
+                self.performSegue(withIdentifier: "Login", sender: nil)
+                
+            } else {
+                label.text = "Fuck outta here boy!"
             }
-            
+            /* let params : NSDictionary = ["email" : email, "password" : password]
+             queryService.getSearchResults(params) { (users, error) in
+             print("We in here bitch \(String(describing: users)) \(error)")
+             } */
         } else {
-            print("Please enter a valid username and password Combination")
+            label.text = "Please enter a valid username and password Combination"
         }
+        
     }
+   
     
     func validateEmail(email : String) ->Bool{
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}"

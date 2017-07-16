@@ -64,7 +64,7 @@
                                                             <color key="titleColor" red="0.29012386321921124" green="0.47102051973342896" blue="0.16024293715898141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="nbt-ia-4BK" kind="presentation" identifier="Login" id="dkT-WI-caq"/>
+                                                            <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bkI-U5-6p2"/>
                                                         </connections>
                                                     </button>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ufs-0d-TqV">
@@ -73,7 +73,7 @@
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.27527402049999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Mky-Cp-pJp">
                                                         <rect key="frame" x="46" y="300" width="282" height="30"/>
@@ -83,6 +83,13 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxF-7g-wmI">
+                                                        <rect key="frame" x="46" y="454" width="282" height="74"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                             </view>
                                             <blurEffect style="light"/>
@@ -95,13 +102,19 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="label" destination="PxF-7g-wmI" id="ZkV-jj-RI7"/>
                         <outlet property="txtEmail" destination="Mky-Cp-pJp" id="Lta-AH-efG"/>
                         <outlet property="txtPassword" destination="ufs-0d-TqV" id="0mp-PU-uGY"/>
+                        <segue destination="nbt-ia-4BK" kind="show" identifier="Login" id="qpn-Fi-pc8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< Updated upstream
             <point key="canvasLocation" x="-498" y="-206"/>
+=======
+            <point key="canvasLocation" x="136.80000000000001" y="-65.217391304347828"/>
+>>>>>>> Stashed changes
         </scene>
         <!--Main Page-->
         <scene sceneID="t9f-3c-d9w">
@@ -909,6 +922,7 @@
         <scene sceneID="7RQ-ML-qNS">
             <objects>
                 <navigationController definesPresentationContext="YES" modalTransitionStyle="flipHorizontal" id="nbt-ia-4BK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AgF-s7-Fvm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="39l-EW-LvP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -970,7 +984,11 @@
         <image name="x-mark-3-xxl" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
+<<<<<<< Updated upstream
         <segue reference="dkT-WI-caq"/>
         <segue reference="mfA-O3-abM"/>
+=======
+        <segue reference="qpn-Fi-pc8"/>
+>>>>>>> Stashed changes
     </inferredMetricsTieBreakers>
 </document>
