@@ -11,11 +11,6 @@ import UIKit
 
 class MainPageViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    
     @IBAction func chooseMentor(_ sender: Any) {
       
         if let rootPageViewController = self.childViewControllers.first as? RootPageViewController{
@@ -24,7 +19,17 @@ class MainPageViewController: UIViewController {
         }
         
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
+    }
+    
     @IBOutlet weak var mentorpicker: UISegmentedControl!
     @IBOutlet weak var mainPageView: UIView!
 
