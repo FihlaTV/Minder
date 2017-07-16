@@ -61,7 +61,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="Login">
-                                                            <color key="titleColor" red="0.82250844594594597" green="0.29225063604865875" blue="0.2567500019818707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" red="0.29012386321921124" green="0.47102051973342896" blue="0.16024293715898141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <segue destination="DRU-r8-tTN" kind="presentation" id="WTx-qj-eO1"/>
@@ -112,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W5m-Db-OQj">
-                                <rect key="frame" x="0.0" y="98" width="375" height="471"/>
+                                <rect key="frame" x="0.0" y="66" width="375" height="503"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="rhL-CM-s9l" kind="embed" id="bSx-g0-HdT"/>
@@ -141,22 +141,28 @@
                                     <segue destination="dXA-CP-e6a" kind="show" id="vb3-F6-e8B"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gl4-2Q-gnO">
-                                <rect key="frame" x="289" y="28" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Messages"/>
-                                <connections>
-                                    <segue destination="gwD-gn-iuV" kind="show" id="KUs-8P-eYS"/>
-                                </connections>
-                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F2T-fy-s6Q">
-                                <rect key="frame" x="127" y="30" width="121" height="29"/>
+                                <rect key="frame" x="127" y="20" width="121" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Mentor"/>
                                     <segment title="Mentee"/>
                                 </segments>
+                                <color key="tintColor" red="0.28874444961547852" green="0.47065919637680054" blue="0.16084152460098267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gl4-2Q-gnO">
+                                <rect key="frame" x="310" y="5" width="55" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Messages" image="message_icon"/>
+                                <connections>
+                                    <segue destination="gwD-gn-iuV" kind="show" id="KUs-8P-eYS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -770,8 +776,9 @@
     </scenes>
     <resources>
         <image name="Black-mentor-mentee" width="849" height="565"/>
+        <image name="message_icon" width="1200" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WTx-qj-eO1"/>
+        <segue reference="5dg-3d-GO6"/>
     </inferredMetricsTieBreakers>
 </document>
