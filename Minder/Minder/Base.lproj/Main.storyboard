@@ -275,7 +275,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.77299767285427468" green="0.7916360514515326" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.93629014300223989" blue="0.76043764496473243" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruj-6V-SrA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -302,7 +302,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.74820016666290279" green="1" blue="0.98055070495647112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96404174444389623" green="1" blue="0.84150188512883595" alpha="0.29885563380281688" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRv-0r-P69" userLabel="First Responder" sceneMemberID="firstResponder"/>
