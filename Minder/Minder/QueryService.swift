@@ -42,7 +42,7 @@ class QueryService {
     var dataTask: URLSessionDataTask?
     
     
-    func getSearchResults(_ params : NSDictionary, completion: @escaping QueryResult) {
+    func getSearchResults(_ params : NSDictionary, _ completion: @escaping QueryResult) {
         dataTask?.cancel()
         
         /* var dataParams:String = "";

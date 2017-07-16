@@ -9,7 +9,7 @@
 import Foundation.NSURL
 
 // Query service creates Track objects
-class User {
+class User:CustomStringConvertible {
     
     let fname: String
     let email: String

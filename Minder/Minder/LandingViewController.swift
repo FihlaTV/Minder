@@ -13,6 +13,8 @@ class LandingViewController: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     
+    let queryService = QueryService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,12 +25,20 @@ class LandingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func signIn(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Login" {
+            signIn()
+        }
+    }
+    
+    func signIn() {
         
         if let email = txtEmail.text, let password = txtPassword.text,  validateEmail(email: email), validatePassword(password: password) {
             
             let params : NSDictionary = ["email" : email, "password" : password]
-            //QueryService.getSearchResults(params)
+            queryService.getSearchResults(params) { (users, error) in
+                print(users)
+            }
             
         } else {
             print("Please enter a valid username and password Combination")
