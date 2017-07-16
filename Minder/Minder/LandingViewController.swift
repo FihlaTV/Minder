@@ -25,9 +25,10 @@ class LandingViewController: UIViewController {
     
     @IBAction func signIn(_ sender: Any) {
         
-        if let username = txtEmail.text, let password = txtPassword.text,  validateEmail(email: username), validatePassword(password: password) {
+        if let email = txtEmail.text, let password = txtPassword.text,  validateEmail(email: email), validatePassword(password: password) {
             
-            // Add code to check if email and username is in database
+            let params : NSDictionary = ["email" : email, "password" : password]
+            //QueryService.getSearchResults(params)
             
         } else {
             print("Please enter a valid username and password Combination")

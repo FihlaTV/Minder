@@ -32,4 +32,8 @@ class User {
         self.education = education
         self.status = status
     }
+    
+    var description: String {
+        return "First Name: \(fname) Email: \(email)"
+    }
 }

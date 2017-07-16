@@ -37,23 +37,25 @@ class QueryService {
     typealias QueryResult = ([User]?, String) -> ()
     
     let defaultSession = URLSession(configuration: .default)
+    var errorMessage = ""
+    var users: [User] = []
     var dataTask: URLSessionDataTask?
     
     
-    func getSearchResults(params : NSDictionary, completion: @escaping QueryResult) {
+    func getSearchResults(_ params : NSDictionary, completion: @escaping QueryResult) {
         dataTask?.cancel()
         
-        var dataParams
+        /* var dataParams:String = "";
         
         for(key,val) in params{
             dataParams += "&"
             dataParams += key as! String
             dataParams += "="
             dataParams += val as! String
-        }
+        } */
         
-        if var urlComponents = URLComponents(string: ) {
-            urlComponents.query = dataParams
+        if var urlComponents = URLComponents(string: "http://localhost:3000") {
+            urlComponents.query = "users"
             // 3
             guard let url = urlComponents.url else { return }
             // 4
@@ -105,7 +107,9 @@ class QueryService {
                 let ocucupation = userDictionary["ocucupation"] as? String,
                 let education = userDictionary["education"] as? String,
                 let status = userDictionary["status"] as? Int {
-                users.append(User(fname, email, username, password, photo, age, occupation, education, status))
+                let user = User(fname, email, username, password, photo, age, ocucupation, education, status)
+                print("YAAAHH \(user)")
+                users.append(user)
                 index += 1
             } else {
                 errorMessage += "Problem parsing UserDictionary\n"
