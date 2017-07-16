@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D778D436D749120A207C73D008646FB0996894EC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D778D436D749120A207C73D008646FB0996894EC" : 9223372036854775807,
+    "FD4A11DDE739D9AE51ADE56120B2D6EA63E2E03F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4D881EF9-5CD9-4F46-9FA7-0F75C8DB0520",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D778D436D749120A207C73D008646FB0996894EC" : "Minder\/",
+    "FD4A11DDE739D9AE51ADE56120B2D6EA63E2E03F" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Minder",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Minder\/Minder.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ksekyiappiah\/Minder.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D778D436D749120A207C73D008646FB0996894EC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ksekyiappiah\/locateAccra.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FD4A11DDE739D9AE51ADE56120B2D6EA63E2E03F"
+    }
+  ]
+}
