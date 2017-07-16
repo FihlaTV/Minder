@@ -93,11 +93,8 @@
 				B87EE34C1F1A94C600B067EE /* AppDelegate.swift */,
 				B87EE34E1F1A94C600B067EE /* ViewController.swift */,
 				B87EE3601F1AC6E000B067EE /* RootPageViewController.swift */,
-<<<<<<< HEAD
 				43ACEE2A1F1AE3670094613E /* API Connections */,
-=======
 				33C233F51F1ABF8900227608 /* MainPageViewController.swift */,
->>>>>>> d080420e8e9151342d3eb4277b19abb0aa97e260
 				B87EE3501F1A94C600B067EE /* Main.storyboard */,
 				B87EE3531F1A94C600B067EE /* Assets.xcassets */,
 				B87EE3551F1A94C600B067EE /* LaunchScreen.storyboard */,
